@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/imgall"
+            android:src="@drawable/ic_baseline_all_inclusive_24"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:layout_margin="8dp"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/imghappy"
+            android:src="@drawable/ic_baseline_emoji_emotions_24"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:layout_margin="8dp"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/imgsun"
+            android:src="@drawable/ic_baseline_wb_sunny_24"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:layout_margin="8dp"
+            app:tint="@color/white" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/text_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seu Nome"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:layout_marginTop="100dp" />
+    <TextView
+        android:id="@+id/frase_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Frase"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:layout_marginTop="10dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/frase_main"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="150dp"
+        android:layout_marginLeft="150dp"/>
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nova Frase"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/ripple_button"/>
+
+</RelativeLayout>
